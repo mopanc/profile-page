@@ -17,6 +17,26 @@ const LeftSide = (props) => {
                         <TitleCardPro>Front-end Developer</TitleCardPro>
                     </p>
                 </UserInfo>
+                <Widget>
+                    <a>
+                        <div>
+                            <img src="/images/adress-icon.png" alt="" />
+                            <span>Fortaleza/Ceará - Brasil</span>
+                        </div>
+                    </a>
+                    <StatusCard>
+                        <div>
+                            <img src="/images/company-icon.png" alt="" />
+                            <span>InCicle</span>
+                        </div>
+                        <div>
+                        <img src="/images/university-icon.png" alt="" />
+                            <span>Minho University</span>
+                        </div>
+                        
+                    </StatusCard>
+                    
+                </Widget>
             </ArtCard>
         </Container>
     )
@@ -58,8 +78,8 @@ const CardBackground = styled.div`
 const Photo = styled.div`
     box-shadow: none;
     background-image: url("/images/fotocv.jpg");
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     box-sizing: border-box;
     background-clip: content-box;
     background-color: white;
@@ -87,6 +107,61 @@ const LinkCard = styled.div`
 const TitleCardPro = styled.div`
     font-size: 12px;
     color: #808080;
+`;
+
+const Widget = styled.div`
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #808080;
+
+    & > a {
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 12px;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    & span {
+        margin-left: 20px;
+    }
+`;
+
+const StatusCard = styled.div`
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+    padding: 10px 12px;
+    align-items: center;
+    justify-content: space-between;
+    word-wrap: none;
+    word-break: none;
+    
+
+    div {
+        display: flex;
+        align-items: center;
+
+    }
+
+    span {
+        align-items: center;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.08);
+        }
+    }
+
+
+
 `;
 
 
