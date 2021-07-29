@@ -31,6 +31,10 @@ The app consists of a screen of a corporate social network, developed with react
 </p>
 <br><br>
 
+<p align="center">
+by Jorge Mopanc and JS :yellow_heart:
+</p>
+
 ## Built with
 
 This project was developed with the following technologies:
@@ -77,8 +81,7 @@ After installing the dependencies, you can go to your terminal, enter the projec
 ```bash
  npm start
 ```
-
-by [Jorge Morais](https://github.com/Mopanc) and JS :yellow_heart:
+<hr>
 
 ## More info
 
