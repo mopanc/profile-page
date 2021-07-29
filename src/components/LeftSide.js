@@ -30,7 +30,7 @@ const LeftSide = (props) => {
                             <span>InCicle</span>
                         </div>
                         <div>
-                        <img src="/images/university-icon.png" alt="" />
+                            <img src="/images/university-icon.png" alt="" />
                             <span>Minho University</span>
                         </div>
                         
@@ -60,7 +60,7 @@ const ArtCard = styled.div`
 `;
 
 const UserInfo = styled.div`
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
     padding: 12px 12px 16px;
     word-wrap: break-word;
     word-break: break-word;
@@ -113,6 +113,7 @@ const Widget = styled.div`
     padding-top: 20px;
     padding-bottom: 20px;
     color: #808080;
+    margin-left: 10px;
 
     & > a {
         text-decoration: none;
@@ -132,7 +133,7 @@ const Widget = styled.div`
     }
     
     & span {
-        margin-left: 20px;
+        margin-left: 10px;
     }
 `;
 
@@ -140,7 +141,7 @@ const StatusCard = styled.div`
     text-decoration: none;
     display: flex;
     font-size: 14px;
-    padding: 10px 12px;
+    padding: 10px 10px 10px 10px;
     align-items: center;
     justify-content: space-between;
     word-wrap: none;
@@ -150,14 +151,14 @@ const StatusCard = styled.div`
     div {
         display: flex;
         align-items: center;
-
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.08);
+        }
     }
 
     span {
         align-items: center;
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.08);
-        }
+
     }
 
 
