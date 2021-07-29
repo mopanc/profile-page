@@ -147,7 +147,7 @@ const Activities = styled.div`
   & p {
     display: flex;
     font-size: 18px;
-    margin-left: 30px;
+    margin-left: 20px;
     align-items: center;
   }
 `;
@@ -170,7 +170,7 @@ const Projects = styled.div`
   & p {
     display: flex;
     font-size: 18px;
-    margin-left: 30px;
+    margin-left: 20px;
     align-items: center;
   }
 `;
@@ -207,6 +207,11 @@ const ActivitieMetrics = styled.div`
   font-size: 12px;
   padding-bottom: 15px;
 
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
   & h5 {
     display: flex;
     padding: 10px;
@@ -239,6 +244,11 @@ const ProjectMetrics = styled.div`
   font-size: 12px;
   padding-bottom: 15px;
 
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
   & h5 {
     display: flex;
     padding: 10px;
@@ -267,6 +277,11 @@ const TotalMetrics = styled.div`
   margin-top: 4px;
   font-size: 12px;
   padding-bottom: 15px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
 
   & h5 {
     display: flex;
@@ -359,11 +374,10 @@ const DateLine = styled.div`
   text-align: left;
   height: 30px;
   overflow: hidden;
-
-  background-color: #d0d0d0;
   position: relative;
-  border: 2px solid #d0d0d0;
+  border: 3px rgba rgba(0, 0, 0, 0.09);
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.09);
 
   & p {
     margin-left: 5px;
