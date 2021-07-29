@@ -1,3 +1,87 @@
+<h1 align="center">
+  Screen of a Social Midia Network
+    <br>
+</h1>
+<h3 align="center">
+  Desktop screen
+    <br>
+</h3>
+<img src="./tela-cheia.png" alt="My cool screenshot"/>
+<h3 align="center">
+  Mobile
+    <br>
+</h3>
+<div align="center">
+<img src="./mobile.png" alt="My cool screenshot"/>
+</div>
+
+<h4 align="center">
+The app consists of a screen of a corporate social network, developed with react, using flexbox and useState
+</h4>
+<br>
+
+<p align="center">
+<img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/mopanc/profile-page?color=2E8BC0">
+<img alt="Project top programing language" src="https://img.shields.io/github/languages/top/Mopanc/profile-page?color=2E8BC0">
+</p>
+
+<p align="center">
+  <a href="built-with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-run">How to run</a>
+</p>
+<br><br>
+
+## Built with
+
+This project was developed with the following technologies:
+
+- [React](https://reactjs.org/)
+- [Css3](https://www.w3schools.com/Css/css_intro.asp)
+- [JavaScript](https://www.javascript.com/)
+- [VS Code](https://code.visualstudio.com/)
+
+## information_source: How to run
+
+### Requirements
+
+To run the app, you will need [Git](https://git-scm.com), [Node.js](https://nodejs.org/) v12.13.1 or higher, [Npm](https://www.npmjs.com/).
+<br>
+<br>
+
+### Application
+
+Now clone the repository and install the dependencies.
+
+```bash
+# to clone the repository
+git clone git@github.com:Mopanc/profile-page.git
+
+# go into the folder
+cd profile-page/
+
+#install the backend dependencies
+npm install
+
+#I used that dependencies to
+npm install react-router-dom
+npm install styled-components
+
+
+```
+
+# run application
+
+After installing the dependencies, you can go to your terminal, enter the project folder, called "profile-page" and run the command
+<br>
+
+```bash
+ npm start
+```
+
+by [Jorge Morais](https://github.com/Mopanc) and JS :yellow_heart:
+
+## More info
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

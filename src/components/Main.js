@@ -1,9 +1,16 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 function Main() {
-  let likes = 0;
+  const [like1, setLike1] = useState(0);
+
   function funcAumentar() {
-    alert("aumentou");
+    setLike1(like1 + 1);
+  }
+
+  const [like2, setLike2] = useState(0);
+  function funcAumentar2() {
+    setLike2(like2 + 1);
   }
 
   return (
@@ -55,7 +62,7 @@ function Main() {
             <div>
               <img src="/images/like.png" alt=""></img>
               <span>
-                <b>{likes}</b> likes
+                <b>{like1}</b> likes
               </span>
             </div>
             <div>
@@ -111,7 +118,9 @@ function Main() {
           <ActionsPub>
             <div>
               <img src="/images/like.png" alt=""></img>
-              <span>155 likes</span>
+              <span>
+                <b>{like2}</b> likes
+              </span>
             </div>
             <div>
               <span>55 coments</span>
@@ -120,7 +129,7 @@ function Main() {
           </ActionsPub>
 
           <ArticleButtons>
-            <button>
+            <button onClick={funcAumentar2}>
               <img src="/images/like.png" alt=""></img>
               <span>Like</span>
             </button>
