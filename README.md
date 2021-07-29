@@ -12,7 +12,7 @@
     <br>
 </h3>
 <div align="center">
-<img src="./mobile.png" alt="My cool screenshot"/>
+<img src="./Mobile.png" alt="My cool screenshot"/>
 </div>
 
 <h4 align="center">
