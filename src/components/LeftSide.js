@@ -8,20 +8,20 @@ const LeftSide = (props) => {
                     <CardBackground />
                     <h1>
                         <Photo />
-                        <NameCard>Jorge Morais</NameCard>
+                        <NameCard>mopanc</NameCard>
                     </h1>
-                    <a>
-                        <LinkCard>@jorgemorais</LinkCard>
+                    <a href="https://github.com/mopanc">
+                        <LinkCard>@mopanc</LinkCard>
                     </a>
                     <p>
-                        <TitleCardPro>Front-end Developer</TitleCardPro>
+                        <TitleCardPro>Full-stack Developer</TitleCardPro>
                     </p>
                 </UserInfo>
                 <Widget>
                     <a>
                         <div>
                             <img src="/images/adress-icon.png" alt="" />
-                            <span>Fortaleza/Ceará - Brasil</span>
+                            <span>Braga, Portugal</span>
                         </div>
                     </a>
                     <StatusCard>
@@ -50,18 +50,22 @@ const Container = styled.div`
 const ArtCard = styled.div`
     text-align: center;
     overflow: hidden;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     background-color: #fff;
-    border-radius: 6px;
-    transition: box-shadow 83ms:
+    border-radius: 12px;
+    transition: all 0.3s ease;
     position: relative;
     border: none;
-    box-shadow: 0 0 0 1px rgba(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
 `;
 
 const UserInfo = styled.div`
     border-bottom: 2px solid rgba(0, 0, 0, 0.15);
-    padding: 12px 12px 16px;
+    padding: 20px 20px 24px;
     word-wrap: break-word;
     word-break: break-word;
 
@@ -77,7 +81,7 @@ const CardBackground = styled.div`
 
 const Photo = styled.div`
     box-shadow: none;
-    background-image: url("/images/fotocv.jpg");
+    background-image: url("https://avatars.githubusercontent.com/u/45471030?v=4");
     width: 150px;
     height: 150px;
     box-sizing: border-box;
@@ -86,9 +90,14 @@ const Photo = styled.div`
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    border: 3px solid black;
+    border: 3px solid #0366d6;
     margin: -38px auto 12px;
     border-radius: 50%;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(3, 102, 214, 0.3);
+    }
 `;
 
 const NameCard = styled.div`
@@ -110,10 +119,9 @@ const TitleCardPro = styled.div`
 `;
 
 const Widget = styled.div`
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 25px 20px;
     color: #808080;
-    margin-left: 10px;
+    margin: 0;
 
     & > a {
         text-decoration: none;

@@ -109,19 +109,25 @@ const RightSide = (props) => {
 
 const Container = styled.div`
   grid-area: rightside;
-  font-family: Arial;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 `;
 
 const DashboardCard = styled.div`
   text-align: center;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 12px;
   position: relative;
   border: none;
-  box-shadow: 0 0 0 1px rgba(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
-  padding: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
 
   & > div {
     display: flex;
@@ -132,16 +138,16 @@ const DashboardCard = styled.div`
 const Activities = styled.div`
   display: flex;
   width: 50%;
-  height: 20px;
+  height: 25px;
   background-color: #649ed9;
   text-decoration: none;
   text-align: left;
   font-size: 14px;
   color: #fff;
-  border-radius: 6px;
-  padding: 20px;
-  margin-right: 4px;
-  margin-bottom: 4px;
+  border-radius: 8px;
+  padding: 25px;
+  margin-right: 6px;
+  margin-bottom: 6px;
   align-items: center;
 
   & p {
@@ -155,16 +161,15 @@ const Activities = styled.div`
 const Projects = styled.div`
   display: flex;
   width: 50%;
-  height: 20px;
-  display: flex;
+  height: 25px;
   background-color: #505559;
   text-decoration: none;
   text-align: left;
   font-size: 14px;
   color: #fff;
-  border-radius: 6px;
-  padding: 20px;
-  margin-bottom: 4px;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 6px;
   align-items: center;
 
   & p {
@@ -177,14 +182,14 @@ const Projects = styled.div`
 
 const TotalCard = styled.div`
   display: flex;
-  height: 20px;
+  height: 25px;
   background-color: #6383a6;
   text-decoration: none;
   text-align: left;
   font-size: 14px;
   color: #fff;
-  border-radius: 6px;
-  padding: 20px;
+  border-radius: 8px;
+  padding: 25px;
   align-items: center;
 
   & p {
@@ -308,11 +313,17 @@ const BirthdayCard = styled.div`
   text-align: center;
   overflow: hidden;
   background-color: #fff;
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: 0 0 0 1px rgba(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
-  padding: 15px;
-  border-bottom: 5px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px 12px 0px 0px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 22px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
   justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
 
   & div {
     display: flex;
@@ -320,20 +331,27 @@ const BirthdayCard = styled.div`
   }
 
   & span {
-    margin-left: 5px;
+    margin-left: 8px;
+    font-weight: 600;
   }
 `;
 
 const BirthdayInfo = styled.div`
   text-align: center;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   background-color: #fff;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 12px 12px;
   border-top: none;
   position: relative;
-  box-shadow: 0 0 0 1px rgba(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
-  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
 `;
 
 const PendencesCard = styled.div`
@@ -341,11 +359,17 @@ const PendencesCard = styled.div`
   text-align: center;
   overflow: hidden;
   background-color: #fff;
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: 0 0 0 1px rgba(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
-  padding: 15px;
+  border-radius: 12px 12px 0px 0px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 22px;
   margin-bottom: 1px;
   justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
 
   & div {
     display: flex;
@@ -353,20 +377,27 @@ const PendencesCard = styled.div`
   }
 
   & span {
-    margin-left: 5px;
+    margin-left: 8px;
+    font-weight: 600;
   }
 `;
 
 const PendencesInfo = styled.div`
   text-align: center;
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   background-color: #fff;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 12px 12px;
   border-top: none;
   position: relative;
-  box-shadow: 0 0 0 1px rgba(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
-  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
 `;
 
 const DateLine = styled.div`
